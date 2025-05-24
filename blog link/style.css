@@ -1,0 +1,132 @@
+body{margin: 0;
+padding: 0;}
+
+
+.first-area {
+  background: linear-gradient(135deg, #11a78e, #fad0c4, #fad0c4);
+padding: 100px 20px;
+ display: flex;
+  align-items: flex-start;
+  padding-top: 20px;}
+  
+.welcome{width: 50%;
+    float: left;
+margin-left: 20%;
+}
+.welcome h2{font-size: 40px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: rgb(235, 96, 96);}
+    .welcome p{width: 100%;
+    font-size: 30px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(235, 96, 96);
+}
+.welcome .wel{font-weight: bold;
+    color:rgb(235, 96, 96); ;
+}
+.image{float: left;
+width: 50%;
+}
+
+.rez{font-weight: bold;
+font-size: 35px;}
+
+.image img{
+  width: 350px;
+  border-radius: 50px;
+  margin-left: 30%;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  margin-top: 60px;
+}
+
+.welcome .highlight {
+  font-size: 40px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff6a00, #ee0979, #00c9ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  background-size: 200%;
+}
+
+@keyframes shine {
+  0% { background-position: 0%; }
+  100% { background-position: 200%; }
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: gray;
+  padding: 15px 40px;
+  color: white;
+  font-family: sans-serif;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffd700; /* yellow hover effect */
+}
+.blog-card {
+  width: 300px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.blog-img {
+  width: 100%;
+  height: 180px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  padding-top: 100px;
+}
+
+.modal-content {
+  background: white;
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 700px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.close {
+  float: right;
+  font-size: 25px;
+  cursor: pointer;
+}
+
